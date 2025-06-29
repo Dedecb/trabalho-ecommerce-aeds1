@@ -1,21 +1,45 @@
-# Projeto de E-commerce - AEDS1
+# 🛒 Sistema de Comércio Eletrônico — AEDS-1
 
-Este projeto simula um sistema de cadastro e controle de produtos e vendas, desenvolvido para a disciplina de Algoritmos e Estruturas de Dados I.
+Este projeto foi desenvolvido como trabalho interdisciplinar das disciplinas *Algoritmos e Estruturas de Dados I* e *Fundamentos de Engenharia de Software*, no curso de Engenharia de Software da PUC Minas.
 
-## Estrutura do Projeto
+## 👥 Integrantes do Grupo
 
-- `include/`: Arquivos de cabeçalho (.h)
-- `src/`: Código-fonte (.cpp)
-- `dados/`: Arquivos com dados simulados
-- `docs/`: Documentação geral
+- André Luiz Rosa
+- Gabriel de Sousa Carvalho Ferreira
+- Bruno Kenji Fantucci Sato 
+- [Nome do integrante 4]
 
-## Como compilar
+## 📆 Entrega
 
-Abra com CLion ou utilize:
+- *Data de entrega:* 02/07/2025
+- *Professores:* João Pedro e Ramon
 
-```bash
-mkdir build
-cd build
-cmake ..
-make
-```
+---
+
+## 📌 Descrição do Projeto
+
+O sistema simula uma plataforma de *comércio eletrônico* com funcionalidades de cadastro de produtos, vendedores, compradores, e o registro de vendas. O sistema emite nota fiscal com cálculo de frete e comissões para vendedores.
+
+---
+
+## ⚙ Funcionalidades Implementadas
+
+- [x] Cadastro de produtos
+- [x] Cadastro de vendedores
+- [x] Cadastro de compradores
+- [x] Registro de vendas
+- [x] Emissão de nota fiscal (com cálculo de frete e comissão)
+- [x] Menu interativo com loop até sair
+
+---
+
+## 🧩 Tecnologias Utilizadas
+
+- Linguagem C (C99)
+- Git e GitHub para controle de versão
+- Documentação com Markdown
+- Organização modular com arquivos .h e .c
+
+---
+
+## 🗂 Estrutura do Projet
