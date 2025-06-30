@@ -7,7 +7,7 @@ Este projeto foi desenvolvido como trabalho interdisciplinar das disciplinas *Al
 - André Luiz Rosa
 - Gabriel de Sousa Carvalho Ferreira
 - Bruno Kenji Fantucci Sato 
-- [Nome do integrante 4]
+- João Lucca Alves Setragni
 
 ## 📆 Entrega
 
@@ -24,12 +24,12 @@ O sistema simula uma plataforma de *comércio eletrônico* com funcionalidades d
 
 ## ⚙ Funcionalidades Implementadas
 
-- [x] Cadastro de produtos
-- [x] Cadastro de vendedores
-- [x] Cadastro de compradores
-- [x] Registro de vendas
-- [x] Emissão de nota fiscal (com cálculo de frete e comissão)
-- [x] Menu interativo com loop até sair
+- [ ] Cadastro de produtos
+- [ ] Cadastro de vendedores
+- [ ] Cadastro de compradores
+- [ ] Registro de vendas
+- [ ] Emissão de nota fiscal (com cálculo de frete e comissão)
+- [ ] Menu interativo com loop até sair
 
 ---
 
