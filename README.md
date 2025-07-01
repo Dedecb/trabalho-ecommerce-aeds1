@@ -24,22 +24,25 @@ O sistema simula uma plataforma de *comércio eletrônico* com funcionalidades d
 
 ## ⚙ Funcionalidades Implementadas
 
-- [ ] Cadastro de produtos
+- [x] Cadastro de produtos (com validação de código duplicado)
 - [ ] Cadastro de vendedores
 - [ ] Cadastro de compradores
-- [ ] Registro de vendas
+- [ ] Registro de vendas (iniciado, com verificação de estoque)
 - [ ] Emissão de nota fiscal (com cálculo de frete e comissão)
-- [ ] Menu interativo com loop até sair
+- [x] Menu interativo com loop até sair
 
 ---
 
 ## 🧩 Tecnologias Utilizadas
 
-- Linguagem C (C99)
+- Linguagem **C++** (com uso de `<stdio.h>`, `<stdlib.h>`, `<iostream>`)
+- Editor **Visual Studio Code**
+- Compilador `g++`
 - Git e GitHub para controle de versão
-- Documentação com Markdown
-- Organização modular com arquivos .h e .c
+- Documentação em Markdown
+- Organização modular com arquivos `.h` e `.cpp`
 
 ---
 
-## 🗂 Estrutura do Projet
+## 🗂 Estrutura do Projeto
+
