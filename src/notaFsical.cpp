@@ -1,31 +1,23 @@
 #include <stdio.h>
 #include <string.h>
-#define MAX_COMPRADORES 100
-
 
 typedef struct {
     
-    char nome[50];
-    char cpf[15];
-    char email[50];
-    char rua[50];
-    char bairro[30];
-    char cidade[30];
-    char estado[3];
-    char cep[10];
+    int codigo;
+    char nome[30];
+    int estoque;
+    float preco;
 
-} Comprador;
+} Produto;
 
+extern Produto produtos[100];
+extern int totalProdutos;
 
-Comprador compradores[MAX_COMPRADORES];
-
-int totalCompradores = 0;
-
-int buscarCompradorPorCPF(const char* cpf) {
+int buscarProdutoPorCodigo(Produto lista[], int total, int codigo) {
     
-    for (int i = 0; i < totalCompradores; i++) {
+    for (int i = 0; i < total; i++) {
         
-        if (strcmp(compradores[i].cpf, cpf) == 0) {
+        if (lista[i].codigo == codigo) {
             
             return i;
         }
@@ -34,114 +26,83 @@ int buscarCompradorPorCPF(const char* cpf) {
     return -1;
 }
 
-
-void inserirComprador() {
+float calcularFrete(float totalVenda) {
     
-    if (totalCompradores >= MAX_COMPRADORES) {
-        printf("Limite de compradores atingido!\n");
+    if (totalVenda <= 100.0) {
         
-        return;
-    }
-
-    Comprador novo;
-
-    printf("\n----- CADASTRO DE COMPRADOR -----\n");
-
-    printf("Nome: ");
-    scanf(" %[^\n]", novo.nome);
-
-    printf("CPF: ");
-    scanf(" %[^\n]", novo.cpf);
-
-    
-    if (buscarCompradorPorCPF(novo.cpf) != -1) {
-        printf("Erro: Já existe comprador com esse CPF!\n");
+        return 30.0;
+    } 
+    else if (totalVenda <= 300.0) {
         
-        return;
-    }
-
-    printf("Email: ");
-    scanf(" %[^\n]", novo.email);
-
-    printf("Rua: ");
-    scanf(" %[^\n]", novo.rua);
-
-    printf("Bairro: ");
-    scanf(" %[^\n]", novo.bairro);
-
-    printf("Cidade: ");
-    scanf(" %[^\n]", novo.cidade);
-
-    printf("Estado: ");
-    scanf(" %[^\n]", novo.estado);
-
-    printf("CEP: ");
-    scanf(" %[^\n]", novo.cep);
-
-    
-    compradores[totalCompradores] = novo;
-    totalCompradores++;
-
-    printf("Comprador cadastrado com sucesso!\n");
-}
-
-
-
-void listarCompradores() {
-    
-    printf("\n--- LISTA DE COMPRADORES (%d) ---\n", totalCompradores);
-
-    
-    if (totalCompradores == 0) {
-        printf("Nenhum comprador cadastrado.\n");
+        return 20.0;
+    } 
+    else {
         
-        return;
-    }
-
-    
-    for (int i = 0; i < totalCompradores; i++) {
-        printf("Nome: %s | CPF: %s | Email: %s\n",
-               compradores[i].nome, compradores[i].cpf, compradores[i].email);
-        printf("Endereco: %s, %s, %s-%s, CEP: %s\n\n",
-               compradores[i].rua, compradores[i].bairro, compradores[i].cidade,
-               compradores[i].estado, compradores[i].cep);
+        return 0.0;
     }
 }
 
+void emitirNotaFiscal() {
+    
+    int codigo, qtd;
+    int posicao;
+    float totalProduto, frete, totalFinal;
 
-int main() {
-    int opcao;
+    char nomeCliente[50];
+    char cpf[15];
+    char endereco[100];
 
-    do {
-        printf("\n------ MENU - COMPRADORES ------\n");
-        printf("1. Cadastrar novo comprador\n");
-        printf("2. Listar compradores cadastrados\n");
-        printf("0. Sair\n");
-        printf("Escolha uma opcao:");
-        scanf("%d", &opcao);
+    printf("\n----- EMISSAO DE NOTA FISCAL -----\n");
 
-        switch (opcao) {
-            
-            case 1:
-                inserirComprador();
-                
-                break;
-            
-            case 2:
-                listarCompradores();
-                
-                break;
-            
-            case 0:
-                printf("Encerrando o programa...\n");
-                
-                break;
-            
-            default:
-                printf("Opção invalida! Tente novamente.\n");
-        }
+    printf("Nome do cliente: ");
+    scanf(" %[^\n]", nomeCliente);
 
-    } while (opcao != 0);
+    printf("CPF do cliente: ");
+    scanf(" %[^\n]", cpf);
 
-    return 0;
+    printf("Endereco completo: ");
+    scanf(" %[^\n]", endereco);
+
+    printf("Codigo do produto: ");
+    scanf("%d", &codigo);
+
+    posicao = buscarProdutoPorCodigo(produtos, totalProdutos, codigo);
+
+    if (posicao == -1) {
+        printf("Produto nao encontrado\n");
+        
+        return;
+    }
+
+    printf("Produto: %s | Preco: R$ %.2f | Estoque: %d\n", 
+           produtos[posicao].nome, produtos[posicao].preco, produtos[posicao].estoque);
+
+    printf("Quantidade desejada: ");
+    scanf("%d", &qtd);
+
+    if (qtd <= 0 || qtd > produtos[posicao].estoque) {
+        printf("Erro: Quantidade invalida ou insuficiente no estoque\n");
+        
+        return;
+    }
+
+    totalProduto = qtd * produtos[posicao].preco;
+    frete = calcularFrete(totalProduto);
+    totalFinal = totalProduto + frete;
+
+    produtos[posicao].estoque -= qtd;
+
+    printf("\n========= NOTA FISCAL =========\n");
+    printf("Cliente: %s\n", nomeCliente);
+    printf("CPF: %s\n", cpf);
+    printf("Endereco: %s\n", endereco);
+    printf("-------------------------------\n");
+    printf("Produto: %s\n", produtos[posicao].nome);
+    printf("Codigo: %d\n", produtos[posicao].codigo);
+    printf("Quantidade: %d\n", qtd);
+    printf("Preco Unitario: R$ %.2f\n", produtos[posicao].preco);
+    printf("Subtotal: R$ %.2f\n", totalProduto);
+    printf("Frete: R$ %.2f\n", frete);
+    printf("TOTAL A PAGAR: R$ %.2f\n", totalFinal);
+    printf("===============================\n");
 }
