@@ -25,10 +25,10 @@ O sistema simula uma plataforma de *comércio eletrônico* com funcionalidades d
 ## ⚙ Funcionalidades Implementadas
 
 - [x] Cadastro de produtos (com validação de código duplicado)
-- [ ] Cadastro de vendedores
-- [ ] Cadastro de compradores
-- [ ] Registro de vendas (iniciado, com verificação de estoque)
-- [ ] Emissão de nota fiscal (com cálculo de frete e comissão)
+- [X] Cadastro de vendedores
+- [X] Cadastro de compradores
+- [X] Registro de vendas (iniciado, com verificação de estoque)
+- [X] Emissão de nota fiscal (com cálculo de frete e comissão)
 - [x] Menu interativo com loop até sair
 
 ---
