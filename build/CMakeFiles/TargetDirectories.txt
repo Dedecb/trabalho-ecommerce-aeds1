@@ -1,0 +1,3 @@
+C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build/CMakeFiles/ecommerce_app.dir
+C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build/CMakeFiles/edit_cache.dir
+C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build/CMakeFiles/rebuild_cache.dir

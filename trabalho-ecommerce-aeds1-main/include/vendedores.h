@@ -1,4 +1,4 @@
-
+#include <string>
 #ifndef VENDEDORES_H
 #define VENDEDORES_H
 

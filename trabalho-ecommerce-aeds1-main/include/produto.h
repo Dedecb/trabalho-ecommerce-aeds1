@@ -14,7 +14,5 @@ extern int totalProdutos;
 
 void cadastrarProduto();
 int buscarProdutoPorCodigo(Produto lista[], int total, int codigo);
-float calcularFrete(float totalVenda);
-void emitirNotaFiscal();
 
 #endif

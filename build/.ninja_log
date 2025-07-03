@@ -1,0 +1,15 @@
+# ninja log v7
+14	224	7732049321621729	CMakeFiles/ecommerce_app.dir/src/compradores.cpp.obj	826f6e663fa36df
+3	401	7732049321512492	CMakeFiles/ecommerce_app.dir/src/main.cpp.obj	4f9436cab146602c
+9	401	7732049321572570	CMakeFiles/ecommerce_app.dir/src/vendedores.cpp.obj	394ee21a84f8edf1
+6	409	7732049321542586	CMakeFiles/ecommerce_app.dir/src/Produto.cpp.obj	50eeebf43039c75d
+409	803	7732049325572238	ecommerce_app.exe	77fc7971dbd6895d
+17	227	7732049321651751	CMakeFiles/ecommerce_app.dir/src/notaFiscal.cpp.obj	97e6839e46d7971c
+11	120	7732060436779908	CMakeFiles/ecommerce_app.dir/src/compradores.cpp.obj	826f6e663fa36df
+15	122	7732060436810061	CMakeFiles/ecommerce_app.dir/src/notaFiscal.cpp.obj	97e6839e46d7971c
+4	342	7732060436699151	CMakeFiles/ecommerce_app.dir/src/main.cpp.obj	4f9436cab146602c
+9	359	7732060436759902	CMakeFiles/ecommerce_app.dir/src/vendedores.cpp.obj	394ee21a84f8edf1
+7	377	7732060436729893	CMakeFiles/ecommerce_app.dir/src/Produto.cpp.obj	50eeebf43039c75d
+3	275	7732061521680103	CMakeFiles/ecommerce_app.dir/src/main.cpp.obj	4f9436cab146602c
+6	288	7732061521712093	CMakeFiles/ecommerce_app.dir/src/vendedores.cpp.obj	394ee21a84f8edf1
+288	667	7732061524528205	ecommerce_app.exe	77fc7971dbd6895d

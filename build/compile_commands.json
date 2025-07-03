@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build",
+  "command": "C:\\TDM-GCC-64\\bin\\g++.exe -I\"C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/include\" -g -std=gnu++17 -o CMakeFiles\\ecommerce_app.dir\\src\\main.cpp.obj -c \"C:\\Users\\bruno\\Desktop\\help trabalho\\trabalho-ecommerce-aeds1-main\\trabalho-ecommerce-aeds1-main\\src\\main.cpp\"",
+  "file": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/src/main.cpp",
+  "output": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build/CMakeFiles/ecommerce_app.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build",
+  "command": "C:\\TDM-GCC-64\\bin\\g++.exe -I\"C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/include\" -g -std=gnu++17 -o CMakeFiles\\ecommerce_app.dir\\src\\Produto.cpp.obj -c \"C:\\Users\\bruno\\Desktop\\help trabalho\\trabalho-ecommerce-aeds1-main\\trabalho-ecommerce-aeds1-main\\src\\Produto.cpp\"",
+  "file": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/src/Produto.cpp",
+  "output": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build/CMakeFiles/ecommerce_app.dir/src/Produto.cpp.obj"
+},
+{
+  "directory": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build",
+  "command": "C:\\TDM-GCC-64\\bin\\g++.exe -I\"C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/include\" -g -std=gnu++17 -o CMakeFiles\\ecommerce_app.dir\\src\\vendedores.cpp.obj -c \"C:\\Users\\bruno\\Desktop\\help trabalho\\trabalho-ecommerce-aeds1-main\\trabalho-ecommerce-aeds1-main\\src\\vendedores.cpp\"",
+  "file": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/src/vendedores.cpp",
+  "output": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build/CMakeFiles/ecommerce_app.dir/src/vendedores.cpp.obj"
+},
+{
+  "directory": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build",
+  "command": "C:\\TDM-GCC-64\\bin\\g++.exe -I\"C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/include\" -g -std=gnu++17 -o CMakeFiles\\ecommerce_app.dir\\src\\compradores.cpp.obj -c \"C:\\Users\\bruno\\Desktop\\help trabalho\\trabalho-ecommerce-aeds1-main\\trabalho-ecommerce-aeds1-main\\src\\compradores.cpp\"",
+  "file": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/src/compradores.cpp",
+  "output": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build/CMakeFiles/ecommerce_app.dir/src/compradores.cpp.obj"
+},
+{
+  "directory": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build",
+  "command": "C:\\TDM-GCC-64\\bin\\g++.exe -I\"C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/include\" -g -std=gnu++17 -o CMakeFiles\\ecommerce_app.dir\\src\\notaFiscal.cpp.obj -c \"C:\\Users\\bruno\\Desktop\\help trabalho\\trabalho-ecommerce-aeds1-main\\trabalho-ecommerce-aeds1-main\\src\\notaFiscal.cpp\"",
+  "file": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/trabalho-ecommerce-aeds1-main/src/notaFiscal.cpp",
+  "output": "C:/Users/bruno/Desktop/help trabalho/trabalho-ecommerce-aeds1-main/build/CMakeFiles/ecommerce_app.dir/src/notaFiscal.cpp.obj"
+}
+]
